@@ -1,0 +1,125 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/nav_bar_supervisor.css">
+        <link rel="stylesheet" href="css/supervisor_view.css">
+        
+        <title>My Students</title>
+    </head>
+	
+	<body>
+		<!-- Header -->
+		<div class="navbar">
+        <div class="navbar_logo">
+			<img src="logo/ez112.png" alt="EZ INTERN LOGO">
+		</div>                  
+        <a href="supervisor_profile.html">Supervisor Profile</a>
+        <a href="supervisor_studentlist.html">Student List</a>
+        <a href="supervisor_internlist.html">Internship List</a>
+        <a href="supervisor_companylist.html">Company List</a>
+        <a href="supervisor_aboutus.html">About Us</a>
+        <div class="navbar_logout">
+            <p><span id="datetime"></span></p>
+            <a href="supervisor_login.html" class="logout" style="">LOGOUT</a>
+        </div>
+        </div>
+        <hr/>
+
+
+        <script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (n) + " " + (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +"  "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+		<div class="row">
+		  <div class="side">
+			<img src="img/lecturer_1.jpg" alt="Avatar">
+			<h4>Dr. Karim</h4>
+			<h4>FCI - MMU Cyberjaya</h4>
+			<h4>MU3120</h4>
+			<a href="supervisor_mystudents.html"><div class="button">MY STUDENTS</div></a>
+			<a href="supervisor_profile.html"><div class="button">MY PROFILE</div></a>
+		  </div>
+		  <div class="main">
+		  	<h2>My Students</h2>
+			<div class="card">
+		        <img src="img/student_1.jpg" class="avatar" alt="Avatar">
+		        <div class="container">
+		            <h4>Rashid bin Samad</h4> 
+		            <p>FCI B.Cs (Data Science)</br>
+		            1161102121</p>
+	
+		            <p>DHL Sdn. Bhd.</br>
+		            Attendance: 6/10
+		            <div class="progress">
+		                <span class="percent">60%</span>
+		                <div class="bar-green"></div>
+		            </div>
+		            <a href="supervisor_studentdetails.html"><div class="button-main">VIEW STUDENT</div></a>
+		            </p>  
+		        </div>
+		    </div>
+
+		    <div class="card">
+		        <img src="img/student_2.jpg" alt="Avatar">
+		        <div class="container">
+		            <h4>Alan Walker</h4> 
+	                <p>Bachelor of Computer Science (Software Engineering)</br>
+	                1161102122</p>
+	  
+		            <p>Petronas</br>
+		            Attendance: 1/10
+		            <div class="progress">
+		            	<span class="percent">10%</span>
+		            	<div class="bar-red"></div>
+		            </div>
+		            <a href="supervisor_studentdetails.html"><div class="button-main">VIEW STUDENT</div></a>
+		            </p>  
+		        </div>
+		    </div>
+
+		    <div class="card">
+		        <img src="img/student_3.jpg" alt="Avatar">
+		        <div class="container">
+		            <h4>Lee Kuan Yew</h4> 
+	                <p>Bachelor of Engineering (Chemical Engineering)</br>
+	                1161102131</p>
+
+		            <p>Shell</br>
+		            Attendance: 6/10
+		            <div class="progress">
+		            	<span class="percent">60%</span>
+		            	<div class="bar-green"></div>
+		            </div>
+		            <a href="supervisor_studentdetails.html"><div class="button-main">VIEW STUDENT</div></a>
+		            </p>  
+		        </div>
+		    </div>
+		  </div>
+
+		  
+		</div>
+
+		<!-- Footer -->
+		<footer id="bot_bar">
+            <hr/>
+            <div class="MMU_Logo">
+                    <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+        </footer>   
+
+		</body>
+</html>

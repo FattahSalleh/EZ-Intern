@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="css/bars_bg.css"> -->
+		<link rel="stylesheet" href="css/nav_bar_company.css">
+		<link rel="stylesheet" href="css/student_list.css">
+		<title>Student List</title>
+	</head>
+	<body>
+		<div class="navbar">
+        <div class="navbar_logo">
+			<img src="logo/ez112.png" alt="EZ INTERN LOGO">
+		</div>                  
+        <a href="supervisor_profile.html">Supervisor Profile</a>
+        <a href="supervisor_studentlist.html">Student List</a>
+        <a href="supervisor_internlist.html">Internship List</a>
+        <a href="supervisor_companylist.html">Company List</a>
+        <a href="supervisor_aboutus.html">About Us</a>
+        <div class="navbar_logout">
+            <p><span id="datetime"></span></p>
+            <a href="supervisor_login.html" class="logout" style="">LOGOUT</a>
+        </div>
+        </div>
+        <hr/>
+        <script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (n) + " " + (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +"  "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+        </header>
+		<h2 style="text-align: center">Student List</h2>
+		<!-- Table containing student's ID, name, faculty and specialisation -->
+		<table class="center nav">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Faculty</th>
+				<th>Specialisation</th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>1161102210</td>
+				<td>Ishraf Ismay</td>
+				<td>FCI</td>
+				<td>BSC(Data Science)</td>
+				<td><a href="supervisor_studentprofile.html">More Details</a></td>
+			</tr>
+			<tr>
+				<td>1161102222</td>
+				<td>Irfan Dhiyauddin</td>
+				<td>FCI</td>
+				<td>BSC(Data Science)</td>
+				<td><a href="supervisor_studentprofile.html">More Details</a></td>
+			</tr>
+			<tr>
+				<td>1161102223</td>
+				<td>Fattah Sallehudin</td>
+				<td>FCI</td>
+				<td>BSC(Data Science)</td>
+				<td><a href="supervisor_studentprofile.html">More Details</a></td>
+			</tr>
+			<tr>
+				<td>1161102224</td>
+				<td>Faiq Radzali</td>
+				<td>FCI</td>
+				<td>BSC(Data Science)</td>
+				<td><a href="supervisor_studentprofile.html">More Details</a></td>
+			</tr>
+			<tr>
+				<td>1161102225</td>
+				<td>Eric Wong</td>
+				<td>FCI</td>
+				<td>BSC(Data Science)</td>
+				<td><a href="supervisor_studentprofile.html">More Details</a></td>
+			</tr>
+			<tr>
+				<td>1161102226</td>
+				<td>Clementine Smith</td>
+				<td>FOM</td>
+				<td>BBM(Economics)</td>
+				<td><a href="supervisor_studentprofile.html">More Details</a></td>
+			</tr>
+			
+		</table>
+		<div class="NxtPg">
+			<h5 class="nav" style="display:inline; padding-left:5px;"><a href="#" >1</a></h5><h5 class="nav" style="display: inline; padding-left:5px;"><a href="#" >Next Page</a></h5>		
+		</div>
+		<!-- Legends for the abbreviation of the name of faculties -->
+		<div>
+			<h5 class="pos">Legends: FCI - Faculty of Computing and Informatics FOE - Faculty of Engineering FOM - Faculty of Management FCM - Faculty of Creative Multimedia</h5>
+		</div>
+	</body>
+	<!-- Footer -->
+		<footer id="bot_bar">
+			<hr/>
+			<div class="MMU_Logo">
+                <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+		</footer>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/intern_list_new.css">
+        <link rel="stylesheet" href="css/nav_bar_company.css">
+
+        <title>New Internship Post</title>
+
+    </head>
+
+    <body>
+
+        
+
+        <body>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+		
+			<div class="navbar_logo">
+				<img src="logo/ez112.png" alt="EZ INTERN LOGO">
+			</div>
+			
+			<a href="company_profile.html">Company Profile</a>
+            <a href="#">Student List</a>
+            <a href="#">Internship List</a>
+            <a href="#">Company List</a>
+            <a href="#">About Us</a>
+            <div class="navbar_logout">
+                <p><span id="datetime"></span></p>
+                <a href="company_login.html" class="logout" style="">LOGOUT</a>
+            </div>
+		</div>
+		<hr/>
+		
+		<script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (n) + " " + (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +"  "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+	
+        <!-- Page Code -->
+
+        <section class="new_intern_container">
+
+            <div class="new_intern_form">
+                <label id="post_name">NEW INTERNSHIP POST</label>
+                <p>
+                    <label>Title:</label>
+                    <input type="text" name="title" placeholder="Title" size="50"/>
+                </p>
+                <p>
+                    <label>Description:</label>
+                    <textarea type="text" name="desciption" placeholder="Desciption" size="125" style="height: 150px;"></textarea>
+                </p>
+            </div>
+
+            <div class="new_intern_button">
+                    <a class="cancel_button" href="intern_list.html">cancel</a>
+                    <input type="submit" name="post" class="post_button" value="POST">
+                </div>        
+
+
+        </section>
+
+        
+        <footer id="bot_bar">
+            <hr/>
+            <div class="MMU_Logo">
+                    <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+        </footer>   
+
+        
+    </body>
+</html>

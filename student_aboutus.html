@@ -1,0 +1,104 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/nav_bar_supervisor.css">
+        <link rel="stylesheet" href="css/about_us.css">
+        
+        <title>About Us</title>
+    </head>
+	
+	<body>
+        <div class="navbar">
+        <div class="navbar_logo">
+            <img src="img/logo_app.png" alt="EZ INTERN LOGO">
+        </div>                    
+        	<a href="student_profile.html">Student Profile</a>
+            <a href="student_studentlist.html">Student List</a>
+            <a href="student_internlist.html">Internship List</a>
+            <a href="student_companylist.html">Company List</a>
+            <a href="student_aboutus.html">About Us</a>
+            <div class="navbar_logout">
+                <p><span id="datetime"></span></p>
+                <a href="company_login.html" class="logout" style="">LOGOUT</a>
+            </div>
+        </div>
+        <hr/>
+
+        <script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (n) + " " + (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +"  "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+        <h2>About Us</h2>
+		<!-- The flexible grid (content) -->
+		<div class="row">
+		  
+		  <div class="main">
+		  		<div class="content-holder">
+				  <img src="logo/ez112.png" width="20%">
+				  <h4>EZIntern is a Web Application project </br>to assist MMU students and supervisors </br>to manage their ITP procedures </br></br>Our Team:</h4>
+				
+				   <div class="card">
+		        	<img src="img/fattah.jpg" alt="Avatar">
+				        <div class="container">
+				            <h4>Muhammad Fattah bin Salehuddin</h4> 
+			                <p>1161102372</p> 
+				        </div>
+				    </div>
+				    <div class="card">
+		        	<img src="img/faiq.jpg" alt="Avatar">
+				        <div class="container">
+				            <h4>Ahmad Faiq Bin Ahmad Radzali</h4> 
+			                <p>1161102149</p> 
+				        </div>
+				    </div>
+
+				    <div class="card">
+		        	<img src="img/irfan.jpg" alt="Avatar">
+				        <div class="container">
+				            <h4>Muhamad Irfan Dhiyauddin Bin Mohd Hafizul</h4> 
+			                <p>1161102437</p> 
+				        </div>
+				    </div>
+				    <div class="card">
+		        	<img src="img/eric.jpg" alt="Avatar">
+				        <div class="container">
+				            <h4>Eric Wong Yean Hwang</h4> 
+			                <p>1142700568</p> 
+				        </div>
+				    </div>
+				    <div class="card">
+		        	<img src="img/ishraf.jpg" alt="Avatar">
+				        <div class="container">
+				            <h4>Ishraf bin Ismay</h4> 
+			                <p>1161102210</p> 
+				        </div>
+				    </div>
+				</div>
+			</div>
+
+		  
+		</div>
+
+		<!-- Footer -->
+		<footer id="bot_bar">
+			<hr/>
+			<div class="MMU_Logo">
+                <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+		</footer>
+
+		</body>
+</html>

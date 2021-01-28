@@ -1,0 +1,75 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/profile_student.css">
+        <link rel="stylesheet" href="css/nav_bar_student.css">
+        <title>Student Profile</title>
+    </head>
+	
+	<body>
+		<div class="navbar">
+        <div class="navbar_logo">
+            <img src="img/logo_app.png" alt="EZ INTERN LOGO">
+        </div>                    
+        	<a href="student_profile.html">Student Profile</a>
+            <a href="student_studentlist.html">Student List</a>
+            <a href="student_internlist.html">Internship List</a>
+            <a href="student_companylist.html">Company List</a>
+            <a href="student_aboutus.html">About Us</a>
+            <div class="navbar_logout">
+                <p><span id="datetime"></span></p>
+                <a href="company_login.html" class="logout" style="">LOGOUT</a>
+            </div>
+        </div>
+        <hr/>
+
+        <script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (n) + " " + (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +"  "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+		<!-- The flexible grid (content) -->
+		<div class="row">
+		  <div class="side">
+			<div class="fakeimg" style="height:160px;  margin-top:68px;">Profile picture</div><br>
+			
+		  </div>
+			<div class="main">
+			<h2>Student's Profile</h2>
+			<div class="fakeimg" style="height:200px;">Image/ads for EZ INTERN</div>
+			<br>
+			<p><strong> Name: </strong> James Isaac Newtron</p>
+			<p><strong> Student ID: </strong> 1161102437</p>
+			<p><strong> Mail Address: </strong> New York, Alabama, Texas. </p>
+			<p><strong> Faculty: </strong> Faculty of Computing Informatics</p>
+			<p><strong> Phone Number: </strong> 0192932122</p>
+			<p><strong> Email: </strong> JamesIsaac.jumpers@student.ny</p>
+			<p><strong> Course Description: </strong> With a variety of specializations that suits your interest, and programmes that provide considerable flexibility, explore through our extensive list of academic programmes and find the right path for you. Browse through our foundation, diploma, degree, postgraduate, short courses and distance education programmes and find out where your academic interests lie and take advantage of our learning solutions tailor-made for your aspirations.</p>
+			<br><br>
+			
+		</div>
+
+		<!-- Footer -->
+		<footer id="bot_bar">
+            <hr/>
+            <div class="MMU_Logo">
+                <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+        </footer>
+
+		</body>
+</html>

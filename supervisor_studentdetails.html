@@ -1,0 +1,162 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/nav_bar_supervisor.css">
+        <link rel="stylesheet" href="css/supervisor_view.css">
+        
+        <title>Student Details</title>
+    </head>
+	
+	<body>
+<!-- Navigation Bar -->
+        <div class="navbar">
+        <div class="navbar_logo">
+            <img src="img/logo_app.png" alt="EZ INTERN LOGO">
+        </div>                    
+        <a href="supervisor_profile.html">Supervisor Profile</a>
+        <a href="supervisor_studentlist.html">Student List</a>
+        <a href="supervisor_internlist.html">Internship List</a>
+        <a href="supervisor_companylist.html">Company List</a>
+        <a href="supervisor_aboutus.html">About Us</a>
+        <div class="navbar_logout">
+            <p><span id="datetime"></span></p>
+            <a href="supervisor_login.html" class="logout" style="">LOGOUT</a>
+        </div>
+        </div>
+        <hr/>
+
+        <script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (n) + " " + (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +"  "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+		<!-- The flexible grid (content) -->
+		<div class="row">
+		  <div class="side">
+			<img src="img/lecturer_1.jpg" alt="Avatar">
+			<h4>Dr. Karim</h4>
+			<h4>FCI - MMU Cyberjaya</h4>
+			<h4>MU3120</h4>
+			<a href="supervisor_mystudents.html"><div class="button">MY STUDENTS</div></a>
+			<a href="supervisor_profile.html"><div class="button">MY PROFILE</div></a>
+
+		  </div>
+		  <div class="main">
+		  	<h2>Student Status</h2>
+			<div class="content-holder">
+				<h3>Student Info</h3>
+				<img src="img/student_1.jpg" alt="Avatar" class="avatar">
+					<table>
+					  <tr>
+					    <td class="td-b">Name</td>
+					    <td>Rashid bin Samad</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">ID</td>
+					    <td>1161102123</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Course</td>
+					    <td>Bachelor of Computer Science (Data Science)</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Phone</td>
+					    <td>0112123637</td>
+					    <td><img src="img/logo_wa.png" class="logo"></td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Email</td>
+					    <td>hi@rashidsmd.com</td>
+					    <td><img src="img/logo_mail.png" class="logo"></td>
+					  </tr>
+					</table>
+			</div>
+			<div class="content-holder">
+				<h3>Company Info</h3>
+				<img src="img/company_1.jpg" alt="Avatar" class="avatar">
+					<table>
+					  <tr>
+					    <td class="td-b">Name</td>
+					    <td>Runcloud Sdn. Bhd.</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Contact Person</td>
+					    <td>Mr Arif</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Phone</td>
+					    <td>0112256261</td>
+					    <td><img src="img/logo_wa.png" class="logo"></td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Email</td>
+					    <td>career@runcloud.io</td>
+					    <td><img src="img/logo_mail.png" class="logo"></td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Location</td>
+					    <td>Cyberjaya, Selangor, MY</td>
+					    <td><img src="img/logo_maps.png" class="logo"></td>
+					  </tr>
+					</table>
+		  	</div>
+		  	<div class="content-holder">
+				<h3>ITP Info</h3>
+		
+					<table>
+					  <tr>
+					    <td class="td-b">Attendance</td>
+					    <td>5/10</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Start Date</td>
+					    <td>1 July 2019</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">End Date</td>
+					    <td>31 December 2019</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Visiting Date</td>
+					    <td>12 December 2019</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Visiting Time</td>
+					    <td>10:00 am</td>
+					  </tr>
+					  <tr>
+					    <td class="td-b">Report Submission</td>
+					    <td>6/6</td>
+					  </tr>
+					</table>
+					<div class="button-main">VIEW REPORT</div>
+					<div class="button-main">SCHEDULE VISIT</div>
+		
+		  	</div>
+		  </div>
+		</div>
+
+		<!-- Footer -->
+		<footer id="bot_bar">
+			<hr/>
+			<div class="MMU_Logo">
+                <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+		</footer>
+
+		</body>
+</html>

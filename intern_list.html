@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/nav_bar_company.css">
+        <link rel="stylesheet" href="css/intern_list.css">
+
+        <title>Internship List</title>
+
+
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+		
+			<div class="navbar_logo">
+				<img src="logo/ez112.png" alt="EZ INTERN LOGO">
+			</div>
+			
+			<a href="company_profile.html">Company Profile</a>
+            <a href="#">Student List</a>
+            <a href="#">Internship List</a>
+            <a href="#">Company List</a>
+            <a href="#">About Us</a>
+            <div class="navbar_logout">
+                <p><span id="datetime"></span></p>
+                <a href="company_login.html" class="logout" style="">LOGOUT</a>
+            </div>
+		</div>
+		<hr/>
+		
+		<script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (n) + " " + (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +"  "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+
+        <!--TABLE-->
+
+
+        <section class="tbl">
+            <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+            <tr>
+                <th><h1>Internship Advertisement</h1></th>
+            </tr>
+            </thead>
+        </table>
+        </div>
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>
+                                <a  href="#">Come for internship at Petronas!</a>
+                                <p>
+                                    <span>16/08/2019 | Petronas</span>
+                                </p>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <a  href="#">Open internship for final year IT students</a>
+                                <p>
+                                    <span>14/08/2019 | FindTutor</span>
+                                </p>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <a  href="#">INTERNSHIP OPEN NOW</a>
+                                <p>
+                                    <span>12/08/2019 | Telekom Malaysia</span>
+                                </p>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <a  href="#">INTERNSHIP AVAILABLE AT DHL!</a>
+                                <a href="#" class="delete">
+                                        <img src=img/delete_red.png alt="Delete" class="delete"/>
+                                </a>
+                                <p>
+                                    <span>01/08/2019 | DHL Malaysia</span>
+                                </p>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <a href="#">FINDING INTERNSHIP STUDENTS</a>
+                                <p>
+                                    <span>14/07/2019 | Huawei</span>
+                                </p>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <a href="#">INTERNSHIP OPPORTUNITY</a>
+                                <p>
+                                    <span>03/07/2019 | Samsung</span>
+                                </p>
+                            </p>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tbl-button">
+                <a class="new_post_button" href="intern_list_new.html">NEW POST</a>
+            </div>
+
+        </section>
+
+   
+        <footer id="bot_bar">
+            <hr/>
+            <div class="MMU_Logo">
+                    <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+        </footer>    
+
+    </body>
+
+</html>

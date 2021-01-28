@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <link rel="stylesheet" href="css/bars_bg.css"> -->
+		<link rel="stylesheet" href="css/nav_bar_company.css">
+		<link rel="stylesheet" href="css/company_list.css">
+		<title>Company List</title>
+	</head>
+	<body>
+		<div class="navbar">
+        <div class="navbar_logo">
+            <img src="img/logo_app.png" alt="EZ INTERN LOGO">
+        </div>                    
+        	<a href="student_profile.html">Student Profile</a>
+            <a href="student_studentlist.html">Student List</a>
+            <a href="student_internlist.html">Internship List</a>
+            <a href="student_companylist.html">Company List</a>
+            <a href="student_aboutus.html">About Us</a>
+            <div class="navbar_logout">
+                <p><span id="datetime"></span></p>
+                <a href="company_login.html" class="logout" style="">LOGOUT</a>
+            </div>
+        </div>
+        <hr/>
+        <script>
+            var d = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            var n = weekday[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = (n) + " " + (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()) +"  "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+        </script>
+
+        </header>
+		<h2 style="text-align: center">Company List</h2>
+		<!-- Table containing company's profile , name and a directory to respective company profile -->
+		<div class="scrollTable">	
+			<table class="center nav">
+				<tr>
+					<td style="width:100px"><img src="img/dell_logo64.png" alt="dell company logo"></td>
+					<td >Dell</td>
+					<td style="width:200px" > <a href="student_companyprofile.html"> Visit Company Profile </a></td>
+				</tr>
+				<tr>
+					<td><img src="img/intel_logo64.png" alt="dell company logo"></td>
+					<td>Intel</td>
+					<td><a href="student_companyprofile.html"> Visit Company Profile </a></td>
+				</tr>
+				<tr>
+					<td><img src="img/hp_logo64.png" alt="hp company logo"></td>
+					<td>Hewlett Packard</td>
+					<td><a href="student_companyprofile.html"> Visit Company Profile </a></td>
+				</tr>
+				<tr>
+					<td><img src="img/ibm_logo64.png" alt="ibm company logo"></td>
+					<td>IBM</td>
+					<td><a href="student_companyprofile.html"> Visit Company Profile </a></td>
+				</tr>
+				<tr>
+					<td><img src="img/dhl_logo64.png" alt="dhl company logo"></td>
+					<td>DHL</td>
+					<td><a href="student_companyprofile.html"> Visit Company Profile </a></td>
+				</tr>
+			</table>
+		</div>
+		<div class="NxtPg">
+			<h5 class="nav" style="display:inline; padding-left:5px;"><a href="#" >1</a></h5><h5 class="nav" style="display: inline; padding-left:5px;"><a href="#" >Next Page</a></h5>		
+		</div>
+
+	</body>
+	<!-- Footer -->
+		<footer id="bot_bar">
+			<hr/>
+			<div class="MMU_Logo">
+                <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+		</footer>
+</html>

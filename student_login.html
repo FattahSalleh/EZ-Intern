@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/bars_bg.css">
+
+        <title> Student Login</title>
+
+    </head>
+
+    <body>
+
+        <header id="top_bar">
+            <div class="MMU_Logo">
+                <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+        </header>
+
+        <hr/>
+
+        <div id="center_logo">
+            <img src="logo/ez112.png" alt="EZ INTERN LOGO">
+        </div>
+
+        <div id="container">
+            <div id="left_side">
+                <div class="left_title" style="position: relative; left: 55px;">
+                    WELCOME TO EZ INTERN
+                </div>
+                <div class="left_option">
+                    <ul>
+                        <li><img src="img/company.png" alt="Company" align="left" style="position: relative; left:5px; top:5px; max-width: 15%; height: auto;"/><a href="company_login.html">&nbsp;&nbsp;&nbsp;&nbsp;Company</a></li>
+                        <li><img src="img/lect.png" alt="Supervisor" align="left" style="position: relative; left:1px; top:1px; max-width: 19%; height: auto;"/><a href="supervisor_login.html">&nbsp;Supervisor</a></li>
+                        <li><img src="img/stud.png" alt="Student" align="left" style="position: relative; left:5px; top:5px; max-width: 15%; height: auto;"/><a class="active" href="#">&nbsp;Student</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right_side">
+                <H2 class="login_title" style=color:red;>LOGIN</H2>
+                <form action="student_internlist.html" class="login_form" method="POST">
+                    <fieldset>
+                        <img src="img/user.png" alt="User Logo" align="middle" class="login_icon "/>
+                        <input type="text" class="login_form" class="login_box" placeholder="Email" name="form_login_username" autofocus autocomplete="Off"><br/>
+                        <img src="img/lock.png" alt="Lock Logo" align="middle" class="login_icon" />
+                        <input type="password" class="login_form" class="login_box"  placeholder="Password" name="form_login_password" autocomplete="Off"><br/>
+                        <a href="student_internlist.html"><input type="submit" name="submit" class="login_button" value="LOG IN"></a>
+                        <div style="font-family: Arial, Helvetica, sans-serif;" class=register_quest>
+                                Not yet registered? 
+                                <a href="register.html">Register here!</a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+        <footer id="bot_bar">
+            <hr/>
+            <div class="MMU_Logo">
+                <img src="img/MMU.png" alt="MMU Logo" title="MMU Logo" />
+            </div>
+        </footer>
+
+        
+    </body>
+</html>
