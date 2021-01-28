@@ -1,0 +1,78 @@
+table{
+	/* border-collapse: collapse; */
+	background-color: white;
+	empty-cells: hide;
+	table-layout: fixed;
+	width: 80%;
+}
+
+body{
+	font-family:arial;
+}
+
+th{
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background-color:rgb(136, 137, 139);
+	color: white;
+}
+
+/* to highlight row of the table when a the pointer is hovered over */
+tr:hover{
+	background-color: #f5f5f5;
+}
+
+td{
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+
+/* To adjust position the table on the center of the page */
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+/* To adjust the position of the legends for faculty under the table */
+.pos{
+	position: fixed;
+	left: 22%;
+	padding: 3px;
+	border: 2px solid white;
+}
+
+.NxtPg{
+	padding-top:10px;
+	/* width:873px; */
+	position: relative;
+	/* background-color:white; */
+	left: 25%;
+	/* display:; */
+}
+
+.nxtPgstyle{
+	padding-top:3px; padding-bottom:3px;
+}
+
+.nav a{
+	text-decoration: none;
+}
+
+/* normal link color */
+.nav a:link {
+  color: black;
+}
+
+/* color change to orange when mouse hover over */
+.nav a:hover {
+  color: orange;
+}
+
+/* color change to blue when it is clicked */
+.nav a:active {
+  color: blue;
+}
